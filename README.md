@@ -15,4 +15,7 @@
 	- bluetoothctl
 	- for emojis
 		- bind = $mainMod, period, exec, killall || rofi -show emoji# configs\
-  - for brightness 
+  - for brightness
+ 
+  - trouble with auto-login
+  	-solution ongoing 	
