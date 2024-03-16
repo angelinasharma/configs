@@ -9,7 +9,7 @@
 	- Feh(image viewer)
 	- Vscodium(coding ide)
 	- vlc media player(multi-codec media player)
-	- Xournal++(handwritten notes)
+	- Rnote(handwritten notes)
 	- Libre office 
 	- Bookworm (epub viewer)
 	- zathura (pdf viewer)
@@ -21,8 +21,4 @@
 	- bluetoothctl
 	- for emojis
 		- bind = $mainMod, period, exec, killall || rofi -show emoji
-	- Brightness control
-		- binde=,XF86MonBrightnessUp,exec, brightnessctl set 3%+
-		- binde=,XF86MonBrightnessDown,exec, brightnessctl set 3%-
-	- Change sddm theme to breeze 
 	- make the waybar prettier from .config/waybar
