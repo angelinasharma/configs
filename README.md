@@ -22,3 +22,5 @@
 	- for emojis
 		- bind = $mainMod, period, exec, killall || rofi -show emoji
 	- make the waybar prettier from .config/waybar
+
+ - install cpio, meson, cmake for headers error(hyprpm)
