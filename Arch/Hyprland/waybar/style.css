@@ -1,0 +1,210 @@
+* {
+    border: none;
+    font-size: 12px;
+    font-family: "JetBrainsMono Nerd Font,JetBrainsMono NF";
+    min-height: 10px;
+}
+
+window#waybar {
+    background: transparent;
+    margin: 5px;
+
+    
+}
+
+#custom-logo {
+    padding: 0 10px;
+}
+
+.modules-right {
+    padding-left: 5px;
+    border-radius: 10px 0 0 10px;
+    margin-top: 2px;
+    background: #000000;
+    margin-right: 10px; /* Added margin to avoid overlap */
+}
+
+.modules-center {
+    padding: 0 10px;
+    margin-top: 2px;
+    border-radius: 10px 10px 10px 10px;
+    background: #000000;
+}
+
+.modules-left {
+    border-radius: 0 10px 10px 0;
+    margin-top: 2px;
+    background: #000000;
+    margin-left: 10px; /* Added margin to avoid overlap */
+}
+
+#battery,
+#custom-clipboard,
+#custom-colorpicker,
+#custom-powerDraw,
+#bluetooth,
+#pulseaudio,
+#network,
+#disk,
+#memory,
+#backlight,
+#cpu,
+#temperature,
+#custom-weather,
+#idle_inhibitor,
+#jack,
+#tray,
+#window,
+#workspaces {
+    color: #5fd1fa;
+}
+
+#clock {
+    padding: 0 5px;
+    color: #5fd1fa;
+}
+
+#pulseaudio {
+    padding-top: 3px;
+    padding:5px;
+}
+
+#temperature.critical,
+#pulseaudio.muted {
+    color: #FF0000;
+    padding-top: 0;
+}
+
+#battery.charging {
+    color: #ffffff;
+    background-color: #26A65B;
+}
+
+#battery.warning:not(.charging) {
+    background-color: #ffbe61;
+    color: black;
+}
+
+#battery.critical:not(.charging) {
+    background-color: #f53c3c;
+    color: #ffffff;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+
+/* Additional module-specific styles for hover effects and padding */
+
+/* Clock Module */
+#clock:hover {
+    background: #2e2e2e;
+}
+
+/* Weather Module */
+#custom-weather:hover {
+    background: #4e4e4e;
+}
+
+/* Temperature Module */
+#temperature:hover {
+    background: #4e4e4e;
+}
+
+/* Hyprland Workspaces */
+#hyprland-workspaces:hover {
+    background: #4e4e4e;
+}
+
+/* Media Module */
+#custom-media:hover {
+    background: #4e4e4e;
+}
+
+/* Backlight Module */
+#backlight:hover {
+    background: #4e4e4e;
+}
+
+/* Storage Module */
+#custom-storage:hover {
+    background: #4e4e4e;
+}
+
+/* Memory Module */
+#memory:hover {
+    background: #4e4e4e;
+}
+
+/* CPU Module */
+#cpu:hover {
+    background: #4e4e4e;
+}
+
+/* Battery Module */
+#battery:hover {
+    background: #4e4e4e;
+}
+
+/* Pulseaudio Module */
+#pulseaudio:hover {
+    background: #4e4e4e;
+}
+
+/* Power Module */
+#custom-power {
+    margin-right:5px;
+    margin-left:5px;
+    color: #5fd1fa;
+}
+
+#custom-power:hover {
+    background: #4e4e4e;
+}
+
+/* Tray Module */
+#tray {
+    margin-left: 5px;
+}
+
+#tray .item {
+    background: transparent;
+}
+
+#tray .item:hover {
+    background: #4e4e4e;
+}
+
+/* Miscellaneous */
+.separator {
+    color: #444;
+}
+
+#custom-sp1, #custom-sp2 {
+    color: #444;
+}
+
+#custom-rofi {
+    color: #b48ead;
+}
+
+#custom-rofi:hover {
+    background: #4e4e4e;
+}
+
+#custom-screenshot_t {
+    color: #a3be8c;
+}
+
+#custom-screenshot_t:hover {
+    background: #4e4e4e;
+}
+
